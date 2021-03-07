@@ -126,7 +126,7 @@ main {
   overflow-y: auto;
   > header {
     background: #ebecee;
-    padding: 1rem 1rem 0 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     margin-bottom: 1rem;
   }
 }
@@ -159,14 +159,15 @@ main {
     // }
     // &:nth-child(4) {
     //   border-top: 4px solid #ebbd41;
-    // }
+    }
   }
-}
+
 
 
 .nav-tabs {
   a {
     margin-right: 2rem;
+    margin-bottom: -2rem;
     display: inline-block;
     padding: 1rem 0 1rem 0;
     font-size: 0.8rem;
@@ -215,7 +216,7 @@ input[type=email],
 .form-input,
 select {
   display: inline-block;
-  padding: .8rem .8rem;
+  padding: .7rem .7rem;
   vertical-align: middle;
   text-decoration: none;
   color: inherit;
@@ -253,16 +254,20 @@ select {
 .btn-flat {
 
   border: none;
-  border-radius: 2px;
   display: inline-block;
-  padding: 0.6rem 1.1rem;
+  padding: 0.721rem 1.1rem;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; 
   font-size: 0.8rem;
   white-space: normal;
   cursor: pointer;
   margin: 5px 0;
+  border: 1px solid rgba(23, 43, 77, 0.1);
 
+
+.icon{
+  margin-right: .5rem;
+}
 
   &-primary{
       background: #152233;
@@ -323,4 +328,21 @@ display: none;
   display: block;
 }
 
+}
+
+
+.d-flex{
+  display: flex;
+
+  &.space-between{
+    justify-content: space-between;
+  }
+
+  &.y-center{
+    align-items: center;
+  }
+}
+
+.text-right{
+  text-align: right;
 }
